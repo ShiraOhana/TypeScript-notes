@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { StringLiteral } from "typescript";
 import "./App.css";
 import { Note } from "./models/note.models";
+import Header from "./components/Header";
+import NotesList from "./components/NotesList";
+import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
   // Note[] structure (interface) is in "models" folder
@@ -15,7 +18,18 @@ function App() {
     },
   ]);
 
-  return <div className="App">App</div>;
+  return (
+    <>
+      <Header />
+      <Container className="mt-5">
+        <Row>
+          <Col>
+            <NotesList notes={notes} />
+          </Col>
+        </Row>
+      </Container>
+    </>
+  );
 }
 
 export default App;
