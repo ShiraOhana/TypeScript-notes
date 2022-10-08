@@ -14,7 +14,7 @@ function App() {
       id: new Date().toString(),
       title: "Meetings",
       text: "Schedual meeting with the team",
-      color: "#dfdfdf",
+      color: "#d3d3d3",
       date: new Date().toDateString(),
     },
   ]);

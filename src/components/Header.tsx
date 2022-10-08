@@ -5,9 +5,9 @@ interface IHeaderProps {}
 
 const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark">
+    <Navbar fixed="top" bg="primary" variant="dark">
       <Container>
-        <Navbar.Brand>React TypeScript Notes</Navbar.Brand>
+        <Navbar.Brand>React and TypeScript Notes App</Navbar.Brand>
       </Container>
     </Navbar>
   );

@@ -39,9 +39,9 @@ const CreateNotes: React.FunctionComponent<ICreateNotesProps> = ({
   };
   return (
     <>
-      <h2>Create Notes</h2>
+      <h2 className="text-primary">Create Notes</h2>
       {error && <Alert variant="danger">{error}</Alert>}
-      <Form className="mt-3 mb-3" onSubmit={(e) => handleSubmit(e)}>
+      <Form className="mt-4 mb-4" onSubmit={(e) => handleSubmit(e)}>
         <Form.Group className="mb-3" controlId="formBasicTitle">
           <Form.Label>Title</Form.Label>
           <Form.Control
@@ -64,7 +64,7 @@ const CreateNotes: React.FunctionComponent<ICreateNotesProps> = ({
           <Form.Control
             type="color"
             id="colorInput"
-            defaultValue="#dfdfdf"
+            defaultValue="#9f9bdb"
             title="Choose your color"
             ref={colorRef}
           />
